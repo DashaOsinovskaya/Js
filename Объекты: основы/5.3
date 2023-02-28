@@ -1,0 +1,12 @@
+let accumulator = new Accumulator(value);
+function Accumulator(value){
+  this.value = value;
+  this.read = function(){
+    this.value += +prompt("Vvedite ", 0);
+    return this;
+  }
+}
+accumulator.read(); 
+accumulator.read(); 
+
+alert(accumulator.value);
